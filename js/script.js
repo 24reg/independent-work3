@@ -1,0 +1,44 @@
+const slides = document.querySelectorAll('.slide'); //Получаем все слайды
+const prevBtn = document.querySelector('.button-left');
+const nextBtn = document.querySelector('.button-right');
+const slideCount = slides.length;
+let slideIndex = 1;
+
+nextBtn.addEventListener('click', function () { //Слушатель нажатия на кнопку "вперёд"
+  slideIndex = (slideIndex + 1) % slideCount; //Высчитывание индекса следующего слайда
+  updateSlider();
+});
+
+prevBtn.addEventListener('click', function () { //Слушатель нажатия на кнопку "назад"
+  slideIndex = (slideIndex - 1 + slideCount) % slideCount; //Высчитывание индекса предыдущего слайда
+  updateSlider();
+});
+
+function updateSlider() { //Функция для изменения классов всех слайдов при нажатии на кнопку
+  const nextSlide = (slideIndex + 1) % slideCount;
+  const prevSlide = (slideIndex - 1 + slideCount) % slideCount;
+
+  document.querySelector('.slide-active').classList.remove("slide-active");
+  slides[slideIndex].classList.add("slide-active");
+  document.querySelector('.slide-next').classList.remove("slide-next");
+  slides[nextSlide].classList.add("slide-next");
+  document.querySelector('.slide-prev').classList.remove("slide-prev");
+  slides[prevSlide].classList.add("slide-prev");
+}
+
+/* **********Выпадающее меню********** */
+
+const dropdownButton = document.querySelector(".dropdown-button");
+const dropdownMenu = document.querySelector(".dropdown-menu");
+
+dropdownButton.addEventListener("click", function () {
+  dropdownMenu.classList.toggle("show");
+});
+
+/* Закрытие окна при нажатии вне поля меню */
+
+window.addEventListener("click", function (event) {
+  if (!event.target.matches(".dropdown-button")) {
+    dropdownMenu.classList.remove("show");
+  }
+});

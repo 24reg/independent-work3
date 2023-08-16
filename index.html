@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- ******************************************************Подключаем bootstrap css****************************************************** -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <!-- ***************************************************Подключаем bootstrap javascript************************************************** -->
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <!-- *********************************************************Подключаем шрифты********************************************************** -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="./fonts/Lora/Lora-Italic-VariableFont_wght.ttf"
+    rel="stylesheet">
+  <!-- *******************************************************Привязка к css******************************************************* -->
+  <link rel="stylesheet" href="./css/style.css">
+  <title>MAROON</title>
+</head>
+<!-- ***************************************************************HEADER*************************************************************** -->
+
+<body>
+
+  <!-- ***************************************************NAVBAR*************************************************** -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./img/MAROON.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" id="par">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./index2.html">Каталог</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="login"></form>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="login"><img src="./icons/personal account.png" alt=""></li>
+        </ul>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="login"><img src="./icons/purchase.png" alt=""></li>
+        </ul>
+        <div class="dropdown">
+          <button class="dropdown-button">Продукция</button>
+          <ul class="dropdown-menu">
+            <li><a href="#">Индивидуальный уход</a></li>
+            <li><a href="#">Уход за лицом</a></li>
+            <li><a href="#">Уход за телом</a></li>
+            <li><a href="#">Ручная работа</a></li>
+          </ul>
+        </div>
+        </form>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Поиск</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="block block_1">
+      <img src="./img/Frame 1.png" alt="">
+    </div>
+  </div>
+  
+  <!-- ++++++++++++++++Слайдер+++++++++++++++++++++++++++++++++++++++++++ -->
+
+  <div class="container_cards">
+    <div class="slide slide-prev">
+      <img class="images slider_img" src="img/Rectangle 5.png" alt="Rectangle 5" />
+      <p class="slider-text">Уход за лицом</p>
+    </div>
+    <div class="slide slide-active">
+      <img class="images marketing_img" src="./img/Rectangle 38.png" alt="Rectangle 38" />
+      <p class="slider-text">Индивидуальный уход</p>
+    </div>
+    <div class="slide slide-next">
+      <img class="images designer__img" src="./img/Rectangle 6.png" alt="Rectangle 6" />
+      <p class="slider-text">Уход за телом</p>
+    </div>
+  </div>
+  <div class="actions">
+    <button type="submit" class="btn button-left"></button>
+    <button type="submit" class="btn button-right"></button>
+  </div>
+  <div class="container">
+    <div class="block block_2">
+      <img src="./img/offer.png" alt="">
+    </div>
+  </div>
+  <div class="container">
+    <div class="block block_3">
+      <img src="./img/Group 21.png" alt="">
+    </div>
+  </div>
+  <div class="container">
+    <div class="block block_4">
+      <img src="./img/Group 10.png" alt="">
+    </div>
+  </div>
+  <div class="container">
+    <div class="block block_5">
+      <img src="./img/contacts.png" alt="">
+    </div>
+  </div>
+
+  
+  
+  <script src="js/script.js"></script>
+</body>
+
+</html>
