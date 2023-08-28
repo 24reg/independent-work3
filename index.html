@@ -14,16 +14,14 @@
   <!-- *********************************************************Подключаем шрифты********************************************************** -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="./fonts/Lora/Lora-Italic-VariableFont_wght.ttf"
-    rel="stylesheet">
+  <link href="./fonts/Lora/Lora-Italic-VariableFont_wght.ttf" rel="stylesheet">
   <!-- *******************************************************Привязка к css******************************************************* -->
   <link rel="stylesheet" href="./css/style.css">
   <title>MAROON</title>
 </head>
 <!-- ***************************************************************HEADER*************************************************************** -->
 
-<body>
+<body class="page">
 
   <!-- ***************************************************NAVBAR*************************************************** -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -39,7 +37,7 @@
             <a class="nav-link active" aria-current="page" href="#" id="par">Главная</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./index2.html">Каталог</a>
+            <a class="nav-link" href="#">Каталог</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">О нас</a>
@@ -78,7 +76,7 @@
       <img src="./img/Frame 1.png" alt="">
     </div>
   </div>
-  
+
   <!-- ++++++++++++++++Слайдер+++++++++++++++++++++++++++++++++++++++++++ -->
 
   <div class="container_cards">
@@ -114,14 +112,62 @@
       <img src="./img/Group 10.png" alt="">
     </div>
   </div>
+  <!-- Форма обратной связи -->
+  <div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fa-solid fa-map-location-dot"></i>
+          <div class="topic">Адрес</div>
+          <div class="text_1">г. Санкт-Петербург</div>
+          <div class="text_2">ул. Большая Конюшенная, 19</div>
+        </div>
+        <div class="phone details">
+          <i class="fa-solid fa-phone-volume"></i>
+          <div class="topic">Телефон</div>
+          <div class="text_1">+7 (923) 888-90-60</div>
+        </div>
+        <div class="email details">
+          <i class="fa-solid fa-at"></i>
+          <div class="topic">E-mail</div>
+          <div class="text_1">info@maroon.ru</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Отправьте нам сообщение</div>
+        <p>
+          Если у вас есть какие-то вопросы или предложения по сотрудничеству -
+          заполните форму ниже
+        </p>
+        <form action="#">
+          <div class="input-box">
+              <input type="text" id="todo-name-input" placeholder="Ваше имя" />
+          </div>
+          <div class="input-box">
+              <input type="text" id="todo-email-input" placeholder="Введите e-mail" />
+          </div>
+          <div class="input-box">
+              <input type="text" id="todo-phone-input" placeholder="Введите телефон"  />
+          </div>
+          <div class="input-box message-box">
+              <textarea type="text" id="todo-message-input" placeholder="Сообщение" ></textarea>
+          </div>
+          <div class="button">
+              <input type="button" id="todo-add-button" value="Отправить" />
+          </div>
+      </form>
+      </div>
+    </div>
+  </div>
   <div class="container">
     <div class="block block_5">
       <img src="./img/contacts.png" alt="">
     </div>
   </div>
 
-  
-  
+  <!-- Подключение шрифтовых иконок, можно получить на fontawesome.com -->
+  <script src="https://kit.fontawesome.com/1f8df4c552.js" crossorigin="anonymous"></script>
+
   <script src="js/script.js"></script>
 </body>
 

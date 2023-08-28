@@ -42,3 +42,19 @@ window.addEventListener("click", function (event) {
     dropdownMenu.classList.remove("show");
   }
 });
+
+/* Форма обратной связи */
+
+const todoInputName = document.querySelector("#todo-name-input");
+const todoInputEmail = document.querySelector("#todo-email-input");
+const todoInputPhone = document.querySelector("#todo-phone-input");
+const todoInputMessage = document.querySelector("#todo-message-input");
+const todoButton = document.querySelector("#todo-add-button");
+
+todoButton.addEventListener("click", () => {
+  console.log(todoInputName.value);
+  console.log(todoInputEmail.value);
+  console.log(todoInputPhone.value);
+  console.log(todoInputMessage.value);
+});
+
